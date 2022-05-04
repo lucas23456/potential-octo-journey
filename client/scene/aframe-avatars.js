@@ -157,9 +157,9 @@ export function markup(
       .aEntity({
         class: 'head',
         networked: `template: #${pTemplate}-head; attachTemplateToLocal:false;`,
-        lookControls: 'pointerLockEnabled: true;',
+        lookControls: 'reverseTouchDrag:true; pointerLockEnabled: true;',
         visible: 'false',
-        camera: 'active: true',
+        camera: 'active: true; far: 1000; near: 0.1;',
         position: '0 1.6 0',
         rotation: '0 0 0'
       }, oom
@@ -177,7 +177,7 @@ export function markup(
         viveControls: 'hand: left',
         oculusTouchControls: 'hand: left',
         windowsMotionControls: 'hand: left',
-        teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
+        teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger; collisionEntities: #Navigationmesh; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
         visible: 'true'
       })
       .aEntity({
