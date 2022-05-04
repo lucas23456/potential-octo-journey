@@ -21,7 +21,7 @@ export function markup(
     })
     .aAssetItem({
       id: 'cursorImage',
-      src: '/scene/models/SlavaAvatar.glb'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/cursorX.png?v=1651671042038'
     })
     .aAssetItem({
       id: 'left-hand-model',
@@ -169,7 +169,7 @@ export function markup(
         rotation: '0 0 0'
       }, oom
                // Добавил курсор
-               .aCursor({visible:'true', geometry:'primitive: plane; src="#cursorImage'})
+               .aCursor({visible:'true', geometry:'primitive: plane', src:'#cursorImage'})
         .aEntity({
           class: 'nametag',
           visible: 'false',
