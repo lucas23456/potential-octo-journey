@@ -20,6 +20,10 @@ export function markup(
       id: 'HallDeconstruct',
       src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651685013445'
     })
+         .aAssetItem({
+      id: 'Navigmesh-fold',
+      src: '/scene/test-navmesh.gltf'
+    }) 
   .aAssetItem({
       id: 'Glass',
       src: 'https://cdn.glitch.global/88fe0f09-858a-449e-936d-4ec30e06f635/GlassOuter.gltf?v=1650638051413'
@@ -34,7 +38,7 @@ export function markup(
     }))
   
   scene(oom
-    .aEntity({ id:'navigationmeshFold', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
+    .aEntity({ id:'Navigationmesh-fold', navMesh: true, visible: false, gltfModel: '#Navigmesh-fold', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
         .aEntity({
       

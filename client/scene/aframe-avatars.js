@@ -196,7 +196,7 @@ export function markup(
         viveControls: 'hand: left',
         oculusTouchControls: 'hand: left',
         windowsMotionControls: 'hand: left',
-        teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger;  collisionEntities: #Navigationmesh, #navigationmeshFold; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
+        teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger;  collisionEntities: #Navigationmesh, #Navigationmesh-fold; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
         visible: 'true'
       })
       .aEntity({
