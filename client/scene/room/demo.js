@@ -34,7 +34,7 @@ export function markup(
     }))
   
   scene(oom
-    .aEntity({ id:'navigationmesh', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
+    .aEntity({ id:'navigationmeshFold', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
         .aEntity({
       
