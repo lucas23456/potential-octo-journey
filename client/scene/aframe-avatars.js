@@ -20,6 +20,10 @@ export function markup(
       src: '/scene/models/SlavaAvatar.glb'
     })
     .aAssetItem({
+      id: 'cursorImage',
+      src: '/scene/models/SlavaAvatar.glb'
+    })
+    .aAssetItem({
       id: 'left-hand-model',
       src: '/scene/models/leftHandHigh.glb'
     })
@@ -165,7 +169,7 @@ export function markup(
         rotation: '0 0 0'
       }, oom
                // Добавил курсор
-               .aCursor({visible:'true', geometry:'primitive: plane; src='})
+               .aCursor({visible:'true', geometry:'primitive: plane; src="#cursorImage'})
         .aEntity({
           class: 'nametag',
           visible: 'false',
