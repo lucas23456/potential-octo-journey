@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651683186941'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651685013445'
     })
   .aAssetItem({
       id: 'Glass',
@@ -28,7 +28,7 @@ export function markup(
     }))
   
   scene(oom
-    .aEntity({ id:'navigationmesh', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '0 0 0', scale: '2 2 2'})
+    .aEntity({ id:'navigationmesh', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '-28 0 -35', scale: '2 2 2'})
     .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0', scale: '2 2 2', enmap:'' })
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
