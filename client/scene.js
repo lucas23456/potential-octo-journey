@@ -36,6 +36,11 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   // await loadingLib('https://cdn.jsdelivr.net/npm/networked-aframe@0.9.1/dist/networked-aframe.js')
   await loadingLib('https://cdn.jsdelivr.net/npm/networked-aframe@0.8.3/dist/networked-aframe.js')
   //await loadingLib('https://cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v3.2.0/dist/aframe-physics-system.js')
+  // добавил отражения enmap.js
+  await loadingLib('./scene/models/enmap.js')
+  await loadingLib('./scene/models/enmapinner.js')
+  // добавил обработчик событий
+  await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')
 
 
   await Promise.all([
@@ -53,6 +58,8 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   const assets = oom.aAssets({ id: 'main-assets' })
   const scene = oom.aScene({
     id: 'main-scene',
+    // Добавил renderer
+    renderer: 'antialias: true; colorManagement: true;',
     physics: 'gravity: -0.5;',
     networkedScene: `room: ${room}; debug: false; adapter: easyrtc; audio: ${hasMic};`
   }, assets)
