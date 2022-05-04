@@ -12,8 +12,8 @@ export function markup(
   assets(oom
          
     .img({
-      id: 'grid',
-      src: '/scene/img/grid.png',
+      id: 'gridfloor',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FloorX.PNG?v=1651692065915',
       crossorigin: 'anonymous'
     })
          
@@ -23,7 +23,7 @@ export function markup(
     })    
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651685013445'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651692717938'
     })
          .aAssetItem({
       id: 'Navigmesh-fold',
@@ -45,14 +45,14 @@ export function markup(
   scene(oom
     .aEntity({ id:'Navigationmesh-fold', navMesh: true, visible: false, gltfModel: '#Navigmesh-fold', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
-        .aEntity({
-      
+        
+        .aEntity({      
       position: '0 .2 0',
-      geometry: 'primitive: plane; width: 300; height: 300;',
+      geometry: 'primitive: plane; width: 500; height: 500;',
       rotation: '-90 0 0',
-      material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
+      material: 'src: #gridfloor; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     })
-        .aEntity({ id:'X-link', navMesh: true, visible: false, gltfModel: '#XplaneLink', position: '-27 31 -45', rotation: '0 15 0', scale: '2 2 2', enmap:'', link:'href: https://seasoned-discovered-mass.glitch.me' })
+        .aEntity({ id:'X-link', gltfModel: '#XplaneLink', position: '-27 31 -45', rotation: '0 15 0', scale: '2 2 2', enmap:'', link:'href: https://seasoned-discovered-mass.glitch.me' })
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
   //.aEntity({ gltfModel: '#X-program', position: '0 -1 0', scale: '2 2 2',enmapinner:'' })

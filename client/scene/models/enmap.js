@@ -7,7 +7,7 @@ AFRAME.registerComponent("enmap", {
             let mesh = this.el.getObject3D("mesh");
             
             var texture = new THREE.TextureLoader().load(
-              "https://cdn.glitch.global/88fe0f09-858a-449e-936d-4ec30e06f635/PanoramaOuter.jpg?v=1650638059527",
+              "/scene/img/sky.png",
               function() {
                 var cubeTex = targetCube.fromEquirectangularTexture(renderer, texture);
                 mesh.traverse(function(el) {
