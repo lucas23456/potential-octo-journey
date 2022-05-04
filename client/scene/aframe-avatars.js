@@ -21,7 +21,7 @@ export function markup(
     })
     .aAssetItem({
       id: 'cursorImage',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/cursorX.png?v=1651671042038'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/Xcursor.gltf?v=1651672837776'
     })
     .aAssetItem({
       id: 'left-hand-model',
@@ -169,7 +169,8 @@ export function markup(
         rotation: '0 0 0'
       }, oom
                // Добавил курсор
-               .aCursor({visible:'true', geometry:'primitive: plane', material: 'src:#cursorImage'})
+               .aCursor({visible:'true', gltfModel: '#cursorImage'})
+               
                .aEntity({
           class: 'nametag',
           visible: 'false',
