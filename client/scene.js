@@ -35,7 +35,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   // https://github.gitop.top/networked-aframe/networked-aframe/issues/280
   // await loadingLib('https://cdn.jsdelivr.net/npm/networked-aframe@0.9.1/dist/networked-aframe.js')
   await loadingLib('https://cdn.jsdelivr.net/npm/networked-aframe@0.8.3/dist/networked-aframe.js')
-  await loadingLib('https://cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v3.2.0/dist/aframe-physics-system.js')
+  //await loadingLib('https://cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v3.2.0/dist/aframe-physics-system.js')
 
 
   await Promise.all([

@@ -31,8 +31,8 @@ export async function markup(
     // })
 
     rooms = [
-      { id: 'demo', name: 'ToryLab' },
-      { id: 'empty', name: 'Folding building' }
+      { id: 'demo', name: 'Folding building' },
+      { id: 'empty', name: 'ToryLab' }
     ]
 
     template = () => {

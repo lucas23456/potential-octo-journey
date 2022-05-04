@@ -33,7 +33,7 @@ export function markup(
   
   scene(oom
     
-    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '-30 1 28', scale: '2 2 2'})
+    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '-30 0 28', scale: '2 2 2'})
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-30 -1 28', scale: '2 2 2', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '-30 -1 28', scale: '2 2 2', enmap:''})
   .aEntity({ gltfModel: '#GlassInner', position: '-30 -1 28', scale: '2 2 2', enmapinner:''})
