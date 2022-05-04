@@ -38,7 +38,7 @@ export function markup(
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
         .aEntity({
       
-      position: '0 1 0',
+      position: '0 .2 0',
       geometry: 'primitive: plane; width: 300; height: 300;',
       rotation: '-90 0 0',
       material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
