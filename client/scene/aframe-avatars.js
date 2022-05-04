@@ -169,7 +169,12 @@ export function markup(
         rotation: '0 0 0'
       }, oom
                // Добавил курсор
-               .aCursor({visible:'true', geometry:'primitive: plane', src:'#cursorImage'})
+               .aCursor({visible:'true', geometry:'primitive: plane', material: 'src:#cursorImage'})
+               .aEntity({
+          class: 'nametag',
+          visible: 'false',
+          text: `value: ${userName}; align:center;`
+        })
         .aEntity({
           class: 'nametag',
           visible: 'false',
