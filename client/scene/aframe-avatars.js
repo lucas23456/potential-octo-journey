@@ -154,16 +154,17 @@ export function markup(
       rotation: '0 0 0',
       spawnInCircle: 'radius:2'
     }, oom
-             .aCursor({visible:})
+             
       .aEntity({
         class: 'head',
         networked: `template: #${pTemplate}-head; attachTemplateToLocal:false;`,
         lookControls: 'reverseTouchDrag:true; pointerLockEnabled: true;',
-        visible: 'false',
+        visible: 'true',
         camera: 'active: true; far: 1000; near: 0.1;',
         position: '0 1.6 0',
         rotation: '0 0 0'
       }, oom
+               .aCursor({visible:'true'})
         .aEntity({
           class: 'nametag',
           visible: 'false',

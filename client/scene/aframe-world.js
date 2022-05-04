@@ -17,13 +17,13 @@ export async function markup(
       crossorigin: 'anonymous'
     }))
   scene(oom
-    .aEntity({
+   /** .aEntity({
       staticBody: true,
       position: '0 0 0',
       geometry: 'primitive: plane; width: 300; height: 300;',
       rotation: '-90 0 0',
       material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
-    })
+    }) */
     .aEntity({ light: 'color: silver; intensity: 1; type: ambient;', visible: '' })
     .aSky({ src: '#sky', rotation: '0 -90 0' }))
 
