@@ -164,7 +164,8 @@ export function markup(
         position: '0 1.6 0',
         rotation: '0 0 0'
       }, oom
-               .aCursor({visible:'true'})
+               // Добавил курсор
+               .aCursor({visible:'true', geometry:'primitive: plane; src='})
         .aEntity({
           class: 'nametag',
           visible: 'false',
