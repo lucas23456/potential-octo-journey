@@ -154,6 +154,7 @@ export function markup(
       rotation: '0 0 0',
       spawnInCircle: 'radius:2'
     }, oom
+             .aCursor({visible:})
       .aEntity({
         class: 'head',
         networked: `template: #${pTemplate}-head; attachTemplateToLocal:false;`,
@@ -168,7 +169,9 @@ export function markup(
           visible: 'false',
           text: `value: ${userName}; align:center;`
         })
+               
         .aSphere({ class: 'head', randomColor: true }))
+              
       .aEntity({
         class: 'leftController',
         networked: 'template: #left-hand-template',
