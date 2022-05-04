@@ -37,7 +37,8 @@ export function markup(
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-30 -1 28', scale: '2 2 2', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '-30 -1 28', scale: '2 2 2', enmap:''})
   .aEntity({ gltfModel: '#GlassInner', position: '-30 -1 28', scale: '2 2 2', enmapinner:''})
-  .aEntity({ gltfModel: '#X-program', position: '-30 -1 28', scale: '2 2 2', enmapinner:'', link:'href: https://fantasy-eight-swordfish.glitch.me' }))
+  .aEntity({ gltfModel: '#X-program', position: '-30 -1 28', scale: '2 2 2', enmapinner:'', link:'href: /demo.js' }))
+ // 'href: https://fantasy-eight-swordfish.glitch.me'
   
   
 }
