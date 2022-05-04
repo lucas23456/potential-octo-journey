@@ -16,6 +16,11 @@ export function markup(
       src: '/scene/img/grid.png',
       crossorigin: 'anonymous'
     })
+         
+     .aAssetItem({
+      id: 'XplaneLink',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/XlinkPlane.gltf?v=1651691489762'
+    })    
     .aAssetItem({
       id: 'HallDeconstruct',
       src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651685013445'
@@ -47,6 +52,7 @@ export function markup(
       rotation: '-90 0 0',
       material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     })
+        .aEntity({ id:'X-link', navMesh: true, visible: false, gltfModel: '#XplaneLink', position: '-27 31 -45', rotation: '0 15 0', scale: '2 2 2', enmap:'', link:'href: https://seasoned-discovered-mass.glitch.me' })
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
   //.aEntity({ gltfModel: '#X-program', position: '0 -1 0', scale: '2 2 2',enmapinner:'' })
