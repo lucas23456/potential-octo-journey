@@ -10,6 +10,12 @@ export function markup(
 
 {
   assets(oom
+         
+    .img({
+      id: 'grid',
+      src: '/scene/img/grid.png',
+      crossorigin: 'anonymous'
+    })
     .aAssetItem({
       id: 'HallDeconstruct',
       src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651685013445'
@@ -28,8 +34,15 @@ export function markup(
     }))
   
   scene(oom
-    .aEntity({ id:'navigationmesh', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '-28 0 -35', scale: '2 2 2'})
-    .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0', scale: '2 2 2', enmap:'' })
+    .aEntity({ id:'navigationmesh', navMesh: true, visible: false, gltfModel: '/scene/test-navmesh.gltf', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
+    .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
+        .aEntity({
+      
+      position: '0 1 0',
+      geometry: 'primitive: plane; width: 300; height: 300;',
+      rotation: '-90 0 0',
+      material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
+    })
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
   //.aEntity({ gltfModel: '#X-program', position: '0 -1 0', scale: '2 2 2',enmapinner:'' })
