@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.global/b5b15357-41a5-4881-a872-3cb6b05c0e48/FoldsMeshBuild.gltf?v=1651044548576'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/FoldsMeshWoDenosie.gltf?v=1651683186941'
     })
   .aAssetItem({
       id: 'Glass',
