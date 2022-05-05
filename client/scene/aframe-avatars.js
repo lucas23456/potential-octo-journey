@@ -170,10 +170,11 @@ export function markup(
       }, oom
                // Добавил курсор
                .aCursor({visible:'true',
+                         fuse:'true',
                         material: 'opacity:0'}) 
   .aEntity({gltfModel: '#cursorImage',position: '0 0 -.9',
                rotation: '0 90 0',
-                                                    scale: '.15 .15 .15'})
+              scale: '.15 .15 .15'})
                
                .aEntity({
           class: 'nametag',
