@@ -172,9 +172,12 @@ export function markup(
                .aCursor({visible:'true',
                          fuse:'true',
                         material: 'opacity:0'}) 
+               // Картинка курсора
   .aEntity({gltfModel: '#cursorImage',position: '0 0 -.9',
                rotation: '0 90 0',
               scale: '.15 .15 .15'})
+               // Разрешение видео
+               .aEntity({ position:'0 2 -1.5', text:'align:center; width:6; wrapCount:100; color: white; value: Click or tap to start video', hide_on_play:'#GagarinVideo'})
                
                .aEntity({
           class: 'nametag',
