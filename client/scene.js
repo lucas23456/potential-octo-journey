@@ -41,8 +41,8 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   await loadingLib('./scene/models/enmapinner.js')
   
   // добавил разрешение на видео
-  await loadingLib('client/scene/play-on-click.js')
-  await loadingLib('./scene/models/enmapinner.js')
+  await loadingLib('./scene/play-on-click.js')
+  await loadingLib('./scene/hide-on-play.js')
   
   // добавил обработчик событий
   await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')

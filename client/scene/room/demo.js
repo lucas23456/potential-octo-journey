@@ -40,7 +40,9 @@ export function markup(
   .aAssetItem({
       id: 'GlassInner',
       src: 'https://cdn.glitch.global/88fe0f09-858a-449e-936d-4ec30e06f635/GlassInner.gltf?v=1650638051773'
-    }))
+    })
+        .aAssets({id:'GagarinVideo', autoplay: 'loop: true', src:'https://cdn.glitch.global/3e6dd8ed-0bf6-4a7d-8574-aa334f54fe16/IMG_9869.MP4?v=1649175434170', playsinline: 'webkit-playsinline' })
+        )
   
   scene(oom
     .aEntity({ id:'Navigationmesh-fold', navMesh: true, visible: false, gltfModel: '#Navigmesh-fold', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
@@ -53,6 +55,8 @@ export function markup(
       material: 'src: #gridfloor; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     })
         .aEntity({ id:'X-link', gltfModel: '#XplaneLink', position: '-5 0.5 -5', rotation: '0 0 0', scale: '2 2 2', enmap:'', link:'href: https://seasoned-discovered-mass.glitch.me' })
+        //.aEntity({ position:'0 0 -1.5',          text:'align:center; width:6; wrapCount:100; color: white; value: Click or tap to start video',
+    hide_on_play:'#GagarinVideo'})
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
   //.aEntity({ gltfModel: '#X-program', position: '0 -1 0', scale: '2 2 2',enmapinner:'' })
