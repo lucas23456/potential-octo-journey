@@ -48,7 +48,7 @@ export function markup(
     .aEntity({ id:'Navigationmesh-fold', navMesh: true, visible: false, gltfModel: '#Navigmesh-fold', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
         
-        .aEntity({ geometry: 'primitive: plane; width: 2; height: 2;', src: '#GagarinVideo', position: '0 0 -3', scale: '2 2 2', enmap:'' })
+        .aEntity({ geometry: 'primitive: plane; width: 2; height: 2;', material:'src: #GagarinVideo', position: '0 0 -3', scale: '2 2 2', play_on_click:'', enmap:'' })
         
         .aEntity({      
       position: '0 .2 0',
