@@ -39,6 +39,11 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   // добавил отражения enmap.js
   await loadingLib('./scene/models/enmap.js')
   await loadingLib('./scene/models/enmapinner.js')
+  
+  // добавил разрешение на видео
+  await loadingLib('client/scene/play-on-click.js')
+  await loadingLib('./scene/models/enmapinner.js')
+  
   // добавил обработчик событий
   await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')
 
