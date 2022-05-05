@@ -1,5 +1,5 @@
 /* global AFRAME */
-AFRAME.registerComponent('hide-on-play', {
+AFRAME.registerComponent('hide_on_play', {
   schema: {type: 'selector'},
   init: function () {
     this.onPlaying = this.onPlaying.bind(this);

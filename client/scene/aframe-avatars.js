@@ -177,7 +177,7 @@ export function markup(
                rotation: '0 90 0',
               scale: '.15 .15 .15'})
                // Разрешение видео
-               .aEntity({ position:'0 2 -1.5', text:'align:center; width:6; wrapCount:100; color: white; value: Click or tap to start video', hide_on_play:'#GagarinVideo'})
+               .aEntity({ position:'0 .3 -1.5', text:'align:center; width:5; wrapCount:100; color: white; value: Click or tap to start video', hide_on_play:'#GagarinVideo'})
                
                .aEntity({
           class: 'nametag',

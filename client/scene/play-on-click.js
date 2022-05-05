@@ -1,5 +1,5 @@
 /* global AFRAME */
-AFRAME.registerComponent('play-on-click', {
+AFRAME.registerComponent('play_on_click', {
   init: function () {
     this.onClick = this.onClick.bind(this);
   },
