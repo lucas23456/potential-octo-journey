@@ -50,7 +50,7 @@ export function markup(
         
         .aEntity({ geometry: 'primitive: plane; width: 2; height: 2;', material:'src: #GagarinVideo', position: '9 3 -18', scale: '2 2 2', play_on_click:'', enmap:'' })
         
-        .aEntity({ iframe: 'width: 2; height: 2;', src: 'https://yandex.ru', position: '15 3 -18', scale: '2 2 2' })
+        .aIframe({geometry:'width:2; height:2', src: 'https://yandex.ru', position: '15 3 -18', scale: '2 2 2' })
         
         .aEntity({      
       position: '0 .2 0',
