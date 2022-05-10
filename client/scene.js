@@ -47,7 +47,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   // добавил обработчик событий
   await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')
   
-   await loadingLib('/newTabLink.js')
+   await loadingLib('./newTabLink.js')
 
 
   await Promise.all([
