@@ -45,7 +45,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   await loadingLib('./scene/models/enmapinner.js')
   
   // добавил разрешение на видео
-  await loadingLib('./scene/play-on-click.js')
+  //await loadingLib('./scene/play-on-click.js')
   await loadingLib('./scene/hide-on-play.js')
   
   // добавил обработчик событий
