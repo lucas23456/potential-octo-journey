@@ -58,7 +58,7 @@ export function markup(
       rotation: '-90 0 0',
       material: 'src: #gridfloor; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     })
-        .aEntity({ id:'X-link', gltfModel: '#XplaneLink', position: '-5 0.5 -5', rotation: '0 0 0', scale: '2 2 2', enmap:'', blanklink:'href: https://seasoned-discovered-mass.glitch.me'})
+        .aEntity({ id:'X-link', gltfModel: '#XplaneLink', position: '-5 0.5 -5', rotation: '0 0 0', scale: '2 2 2', enmap:'', link:'href: https://seasoned-discovered-mass.glitch.me', target:'_blank', rel:'noopener noreferrer' })
         
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
