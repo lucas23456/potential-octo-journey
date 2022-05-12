@@ -1,4 +1,4 @@
-AFRAME.registerComponent('link_blank', {
+AFRAME.registerComponent('linkblank', {
   schema: {
     backgroundColor: {default: 'red', type: 'color'},
     borderColor: {default: 'white', type: 'color'},
