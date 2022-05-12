@@ -48,9 +48,9 @@ export function markup(
     .aEntity({ id:'Navigationmesh-fold', navMesh: true, visible: false, gltfModel: '#Navigmesh-fold', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct', position: '-28 0 -35', scale: '2 2 2', enmap:'' })
         
-        .aEntity({ geometry: 'primitive: plane; width: 2; height: 2;', material:'src: #GagarinVideo', position: '9 3 -18', scale: '2 2 2', play_on_click:'', enmap:'' })
+        .aEntity({ geometry: 'primitive: plane; width: 2; height: 2;', material:'src: #GagarinVideo', position: '9 3 -18', scale: '2 2 2', play_on_click:'',link_blank:'href: https://opensea.io/', enmap:'' })
         
-        .aIframe({geometry:'width:2; height:2', src: 'https://yandex.ru', position: '15 3 -18', scale: '2 2 2' })
+        
         
         .aEntity({      
       position: '0 .2 0',
@@ -58,7 +58,7 @@ export function markup(
       rotation: '-90 0 0',
       material: 'src: #gridfloor; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     })
-        .aEntity({ id:'X-link', gltfModel: '#XplaneLink', position: '-5 0.5 -5', rotation: '0 0 0', scale: '2 2 2', enmap:'', link:'href: https://seasoned-discovered-mass.glitch.me', target: '_blank' })
+        .aEntity({ id:'X-link', gltfModel: '#XplaneLink', position: '-5 0.5 -5', rotation: '0 0 0', scale: '2 2 2', enmap:'', link_blank:'href: https://seasoned-discovered-mass.glitch.me', target: '_blank' })
         
   //.aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2', enmap:''})
   //.aEntity({ gltfModel: '#GlassInner', position: '0 -1 0', scale: '2 2 2', enmapinner:''})
