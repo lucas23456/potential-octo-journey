@@ -26,7 +26,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   // await loadingLib('https://cdn.jsdelivr.net/npm/aframe@1.3.0/dist/aframe-master.js')
   await loadingLib('https://cdn.jsdelivr.net/npm/aframe@1.0.4/dist/aframe-master.js')
   
-  await loadingLib('./scene/blanklink.js')
+  
   await loadingLib('./scene/link-blank.js')
   
   await loadingLib('https://cdn.jsdelivr.net/npm/socket.io-client@4.4.1/dist/socket.io.js')
