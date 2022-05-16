@@ -7,7 +7,7 @@ AFRAME.registerComponent("enmapinner", {
             let mesh = this.el.getObject3D("mesh");
             
             var texture = new THREE.TextureLoader().load(
-              "https://cdn.glitch.global/88fe0f09-858a-449e-936d-4ec30e06f635/Panorama.jpg?v=1650638059997",
+              "https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/PanoSpiral.jpg?v=1652719081430",
               function() {
                 var cubeTex = targetCube.fromEquirectangularTexture(renderer, texture);
                 mesh.traverse(function(el) {
