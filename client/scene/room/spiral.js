@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/Spiral.gltf?v=1652719036449'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SpiralBlack.gltf?v=1652988378824'
     })
          
     .aAssetItem({
@@ -23,6 +23,10 @@ export function markup(
   .aAssetItem({
       id: 'Glass',
       src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/Glass.gltf?v=1652719035389'
+    })
+         .aAssetItem({
+      id: 'SphereGlass',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SpiralSphereGlass.gltf?v=1652983030072'
     })
          .aAssetItem({
     id: 'Navigmesh',
@@ -38,6 +42,10 @@ export function markup(
       id: 'X-program',
       src: 'https://cdn.glitch.global/88fe0f09-858a-449e-936d-4ec30e06f635/X-prog.gltf?v=1650704573096'
     })
+         .aAssetItem({
+      id: 'SphereGlassOuter',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SpiralSphereGlassOuter.gltf?v=1652983030072'
+    })
   .aAssetItem({
       id: 'GlassOuter',
       src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/GlassOuter.gltf?v=1652719035424'
@@ -50,7 +58,11 @@ export function markup(
     .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0', scale: '2 2 2', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '2 2 2', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
-  .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''}))
+  .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
+       .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
+  .aEntity({ gltfModel: '#SphereGlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
+       
+       )
   // .aEntity({ gltfModel: '#X-program', position: '-30 -1 28', scale: '2 2 2', enmapinner:'', link:'href: https://seasoned-discovered-mass.glitch.me' }))
  // 'href: https://fantasy-eight-swordfish.glitch.me'
   
