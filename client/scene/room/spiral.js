@@ -54,7 +54,7 @@ export function markup(
   scene(oom
     
     .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '3 3 3'})
-        .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '3 3 3'})
+        // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '3 3 3'})
     .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0', scale: '3 3 3', enmap:'' })
     .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '3 3 3', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '3 3 3', enmapinner:''})
