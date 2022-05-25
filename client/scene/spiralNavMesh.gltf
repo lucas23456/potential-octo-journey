@@ -22,7 +22,6 @@
         {
             "alphaCutoff" : 0.5,
             "alphaMode" : "MASK",
-            "doubleSided" : true,
             "name" : "SpiralLongNavig",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
