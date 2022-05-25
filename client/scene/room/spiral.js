@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SpiralBlack.gltf?v=1652988378824'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/Spiral.gltf?v=1653474820183'
     })
          
     .aAssetItem({
@@ -53,14 +53,14 @@ export function markup(
   
   scene(oom
     
-    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '2 2 2'})
-        .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
-    .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0', scale: '2 2 2', enmap:'' })
-    .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '2 2 2', enmap:'' })
-  .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
-  .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
-       .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
-  .aEntity({ gltfModel: '#SphereGlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
+    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '3 3 3'})
+        .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '3 3 3'})
+    .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0', scale: '3 3 3', enmap:'' })
+    .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '3 3 3', enmap:'' })
+  .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '3 3 3', enmapinner:''})
+  .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '3 3 3', enmap:''})
+       .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '3 3 3', enmapinner:''})
+  .aEntity({ gltfModel: '#SphereGlassOuter', position: '0 0 0', scale: '3 3 3', enmap:''})
        
        )
   // .aEntity({ gltfModel: '#X-program', position: '-30 -1 28', scale: '2 2 2', enmapinner:'', link:'href: https://seasoned-discovered-mass.glitch.me' }))
