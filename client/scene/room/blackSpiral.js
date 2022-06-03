@@ -22,7 +22,7 @@ export function markup(
          
   .aAssetItem({
       id: 'Glass',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlass.gltf?v=1654159841503'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/ConeGlass.gltf?v=1654154756855'
     })
          .aAssetItem({
       id: 'SphereGlass',
@@ -60,7 +60,7 @@ export function markup(
     // .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '2 2 2', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
   // .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
-       // .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
+       .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '2 2 2', enmapinner:'',animation-mixer="clip: KeyAction ;"})
   // .aEntity({ gltfModel: '#SphereGlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
        
        )
