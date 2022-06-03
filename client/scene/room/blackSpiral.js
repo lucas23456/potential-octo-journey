@@ -44,7 +44,8 @@ export function markup(
     })
          .aAssetItem({
       id: 'SphereGlassOuter',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SpiralSphereGlassOuter.gltf?v=1652983030072'
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SpiralSphereGlassOuter.gltf?v=1652983030072',
+    
     })
   .aAssetItem({
       id: 'GlassOuter',
