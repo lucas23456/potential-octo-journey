@@ -60,7 +60,7 @@ export function markup(
     // .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '2 2 2', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
   // .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
-       .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '2 2 2', enmapinner:'',animation-mixer="clip: KeyAction ;"})
+       .aEntity({ gltfModel: '#SphereGlass', position: '0 0 0', scale: '2 2 2', enmapinner:'',animation-mixer:'clip: KeyAction ;"})
   // .aEntity({ gltfModel: '#SphereGlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
        
        )
