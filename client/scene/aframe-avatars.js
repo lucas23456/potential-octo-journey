@@ -200,9 +200,11 @@ export function markup(
         viveControls: 'hand: left',
         oculusTouchControls: 'hand: left',
         windowsMotionControls: 'hand: left',
+      // телепорт
         teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger;  collisionEntities: #Navigationmesh, #Navigationmesh-fold; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
         visible: 'true'
       })
+            
       .aEntity({
         class: 'rightController',
         networked: 'template: #right-hand-template',
