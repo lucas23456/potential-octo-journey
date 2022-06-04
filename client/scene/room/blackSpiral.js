@@ -59,8 +59,7 @@ export function markup(
          .aAssetItem({
     id: 'NavigmeshSphere',
       src: '/scene/spiralSphereNavMesh.gltf'
-    }) 
-         
+    })    
          
          .aAssetItem({
       id: 'X-program',
@@ -84,7 +83,7 @@ export function markup(
     // .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '2 2 2', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
   // .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
-       .aEntity({ gltfModel: '#GlassWall0', position: '0 0 0', scale: '2 2 2', enmapinner:'',animationMixer:'clip: KeyAction ;"})
+       .aEntity({ gltfModel: '#GlassWall0', position: '0 0 0', scale: '2 2 2', enmapinner:'',animation:'property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear'})
   // .aEntity({ gltfModel: '#SphereGlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
        
        )
