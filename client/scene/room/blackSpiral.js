@@ -29,6 +29,30 @@ export function markup(
       src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls.gltf?v=1654271436101'
     })
          .aAssetItem({
+      id: 'GlassWall1',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls1.gltf?v=1654271443556'
+    })
+         .aAssetItem({
+      id: 'GlassWall2',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls2.gltf?v=1654271443348'
+    })
+         .aAssetItem({
+      id: 'GlassWall3',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls3.gltf?v=1654271441980'
+    })
+         .aAssetItem({
+      id: 'GlassWall4',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls4.gltf?v=1654271441837'
+    })
+         .aAssetItem({
+      id: 'GlassWall5',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls5.gltf?v=1654271441586'
+    })
+         .aAssetItem({
+      id: 'GlassWall6',
+      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/BlackConeGlassWalls6.gltf?v=1654271441555'
+    })
+         .aAssetItem({
     id: 'Navigmesh',
       src: '/scene/spiralNavMesh.gltf'
     }) 
