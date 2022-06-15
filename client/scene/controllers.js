@@ -9,9 +9,9 @@ AFRAME.registerComponent('smooth-locomotion', {
         if (!this.data.active) return;
 
         //Get scene element references
-        this.player = document.querySelector('a-scene').querySelector('#player');
+        this.player = document.querySelector('#player');
         this.head = player.querySelector('#head');
-        var controllerL = document.querySelector('a-scene').querySelector('#controllerL');
+        var controllerL = document.querySelector('#controllerL');
 
         //Set up variables to store controller input data
         this.moveX = 0;
