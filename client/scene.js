@@ -51,6 +51,9 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   // добавил обработчик событий
   await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')
   
+  // добавил поворот на vr контроллер
+  await loadingLib('./scene/controllers.js')
+  
   
   
    //await loadingLib('./newTabLink.js')
