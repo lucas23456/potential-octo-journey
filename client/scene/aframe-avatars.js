@@ -210,6 +210,7 @@ export function markup(
         networked: 'template: #right-hand-template',
         handControls: 'hand: right; handModelStyle: lowPoly; color: #15ACCF',
         trackedControls: true,
+        turnType:'snap',
         viveControls: 'hand: right',
         oculusTouchControls: 'hand: right',
         windowsMotionControls: 'hand: right',
