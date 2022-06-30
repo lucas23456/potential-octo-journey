@@ -48,10 +48,12 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   //await loadingLib('./scene/play-on-click.js')
   await loadingLib('./scene/hide-on-play.js')
   
-  // добавил обработчик событий
+  // добавил обработчик событий?
   await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')
   
+  //  добавил поворот на стике
   
+  await loadingLib('./scene/vrTurn.js')
   
    //await loadingLib('./newTabLink.js')
 
