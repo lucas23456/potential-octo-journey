@@ -160,6 +160,7 @@ export function markup(
     }, oom
              
       .aEntity({
+        id:'head',
         class: 'head',
         networked: `template: #${pTemplate}-head; attachTemplateToLocal:false;`,
         lookControls: 'reverseTouchDrag:true; pointerLockEnabled: true;',
@@ -206,6 +207,7 @@ export function markup(
       })
             
       .aEntity({
+        id:'rightHand',
         class: 'rightController',
         networked: 'template: #right-hand-template',
         handControls: 'hand: right; handModelStyle: lowPoly; color: #15ACCF',
@@ -216,7 +218,8 @@ export function markup(
         laserControls: true,
         raycaster: 'showLine: true; far: 10; interval: 0; objects: .clickable, linkblank;',
         line: 'color: lawngreen; opacity: 0.5',
-        visible: 'true'
+        visible: 'true',
+      
       }))
 
   scene(player)
