@@ -29,9 +29,9 @@ AFRAME.registerComponent('turncontrols', {
         this.posAdjustNeeded = false;
 
         //Hook up event listeners for the relevant turning input events
-        controllerL.addEventListener('axismove', (event) => {
-            this.rotateX = event.detail.axis[2] != 0 ? event.detail.axis[2] : event.detail.axis[0];
-        });
+        // controllerL.addEventListener('axismove', (event) => {
+        //     this.rotateX = event.detail.axis[2] != 0 ? event.detail.axis[2] : event.detail.axis[0];
+        // });
     },
     tick: function(time, timeDelta) {
         //Do nothing if this controller isn't meant to turn or the turnType is invalid
