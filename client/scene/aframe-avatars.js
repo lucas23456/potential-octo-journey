@@ -214,7 +214,7 @@ export function markup(
         oculusTouchControls: 'hand: right',
         windowsMotionControls: 'hand: right',
         laserControls: true,
-        raycaster: 'showLine: true; far: 10; interval: 0; objects: .clickable, a-link;',
+        raycaster: 'showLine: true; far: 10; interval: 0; objects: .clickable, linkblank;',
         line: 'color: lawngreen; opacity: 0.5',
         visible: 'true'
       }))
