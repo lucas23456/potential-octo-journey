@@ -219,7 +219,7 @@ export function markup(
         raycaster: 'showLine: true; far: 10; interval: 0; objects: .clickable, linkblank;',
         line: 'color: lawngreen; opacity: 0.5',
         visible: 'true',
-        turncontrols:'turnType:snap'
+        turncontrols:'turnType: snap'
       }))
 
   scene(player)
