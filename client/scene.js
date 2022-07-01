@@ -24,6 +24,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
 
   // https://github.com/n5ro/aframe-extras/issues/369
   // await loadingLib('https://cdn.jsdelivr.net/npm/aframe@1.3.0/dist/aframe-master.js')
+  // await loadingLib('https://aframe.io/releases/1.3.0/aframe.min.js')
   await loadingLib('https://cdn.jsdelivr.net/npm/aframe@1.0.4/dist/aframe-master.js')
   
   
