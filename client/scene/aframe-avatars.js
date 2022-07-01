@@ -194,6 +194,7 @@ export function markup(
         .aSphere({ class: 'head', randomColor: true }))
               
       .aEntity({
+        id:'leftHand',
         class: 'leftController',
         networked: 'template: #left-hand-template',
         handControls: 'hand: left; handModelStyle: lowPoly; color: #15ACCF',
@@ -203,7 +204,9 @@ export function markup(
         windowsMotionControls: 'hand: left',
       // телепорт
         teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger;  collisionEntities: #Navigationmesh, #Navigationmesh-fold; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
-        visible: 'true'
+        visible: 'true',
+      //поворот по стикам
+        turncontrols:'turnType: snap'
       })
             
       .aEntity({
@@ -219,7 +222,7 @@ export function markup(
         raycaster: 'showLine: true; far: 10; interval: 0; objects: .clickable, linkblank;',
         line: 'color: lawngreen; opacity: 0.5',
         visible: 'true',
-        turncontrols:'turnType: snap'
+        
       }))
 
   scene(player)

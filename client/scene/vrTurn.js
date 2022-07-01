@@ -16,7 +16,7 @@ AFRAME.registerComponent('turncontrols', {
         //Get scene element references
         this.player = document.querySelector('a-scene').querySelector('#player');
         this.head = player.querySelector('#head');        
-        var controllerR = document.querySelector('a-scene').querySelector('#rightHand');
+        var controllerR = document.querySelector('a-scene').querySelector('#leftHand');
 
         //Set up variables to read controller input and control turn logic
         this.rotateX = 0;
