@@ -53,6 +53,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   await loadingLib('https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js')
   
   //  добавил поворот на стике
+  await loadingLib('https://cdn.jsdelivr.net/npm/gl-matrix@3.0.0/gl-matrix-min.js')
   
   await loadingLib('./scene/vrTurn.js')
   
