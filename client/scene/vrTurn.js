@@ -40,7 +40,7 @@ AFRAME.registerComponent('turncontrols', {
         //Adjust position and turn based on schema
         if (this.posAdjustNeeded) this.posAdjust();
         if (this.data.turnType == 'snap') this.snapTurn();
-        if (this.data.turnType == 'smooth') this.smoothTurn(timeDelta / 1000);
+        if (this.data.turnType == 'smooth') this.smoothTurn(timeDelta / 2000);
 
     },
     snapTurn: function() {
