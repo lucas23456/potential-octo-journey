@@ -16,7 +16,7 @@ AFRAME.registerComponent('turncontrols', {
         //Get scene element references
         this.player = document.querySelector('a-scene').querySelector('#player');
         this.head = player.querySelector('#head');        
-        var controllerL = document.querySelector('a-scene').querySelector('#leftHand');
+        var controllerR = document.querySelector('a-scene').querySelector('#rightHand');
 
         //Set up variables to read controller input and control turn logic
         this.rotateX = 0;
@@ -29,7 +29,7 @@ AFRAME.registerComponent('turncontrols', {
         this.posAdjustNeeded = false;
 
         //Hook up event listeners for the relevant turning input events
-        controllerL.addEventListener('axismove', (event) => {
+        controllerR.addEventListener('axismove', (event) => {
         this.rotateX = event.detail.axis[2] != 0 ? event.detail.axis[2] : event.detail.axis[0];
         });
     },
