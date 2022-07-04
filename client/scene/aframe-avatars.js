@@ -206,7 +206,8 @@ export function markup(
         teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger;  collisionEntities: #Navigationmesh, #Navigationmesh-fold; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
         visible: 'true',
       //поворот по стикам
-        turncontrols:'turnType: snap'
+        turncontrols:'turnType: snap',
+        hand:'left'
       })
             
       .aEntity({
