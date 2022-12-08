@@ -223,7 +223,7 @@ export function markup(
         line: 'color: lawngreen; opacity: 0.5',
         visible: 'true',
       //поворот по стикам
-        turncontrols:'turnType: smooth',
+        turncontrols:'turnType: snap',
         
       }))
 
