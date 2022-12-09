@@ -25,7 +25,7 @@ export async function markup(
       material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     }) */
     .aEntity({ light: 'color: white; intensity: 1.5; type: ambient;', visible: '' })
-    .aSky({ color: 'white', rotation: '0 0 0' }))
+    .aSky({ src: '#sky', rotation: '0 115 0' }))
 
   await import(`./room/${room}.js`).then(({ markup }) => markup(oom, assets, scene))
 }
