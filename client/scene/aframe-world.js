@@ -13,7 +13,7 @@ export async function markup(
     })
     .img({
       id: 'sky',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/SkySpace3.jpg?v=1670573045948',
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/sky.jpg?v=1671351037168',
       crossorigin: 'anonymous'
     }))
   scene(oom
@@ -25,7 +25,7 @@ export async function markup(
       material: 'src: #grid; repeat: 100 100; transparent: true; metalness:0; roughness: 10; sphericalEnvMap: #sky;'
     }) */
     .aEntity({ light: 'color: white; intensity: 1.5; type: ambient;', visible: '' })
-    .aSky({ src: '#sky', rotation: '0 115 0' }))
+    .aSky({ src: '#sky', rotation: '0 355 0' }))
 
   await import(`./room/${room}.js`).then(({ markup }) => markup(oom, assets, scene))
 }
