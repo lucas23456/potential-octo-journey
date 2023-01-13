@@ -154,7 +154,7 @@ export function markup(
       //jumpAbility: 'maxJumps: 5; distance: 0.1;',
       navigator: 'cameraRig: #player; cameraHead: #head; collisionEntities: .collision; ignoreEntities: .clickable',
       networked: `template: #${pTemplate}; attachTemplateToLocal:false;`,
-      position: '0 0 0',
+      position: '-70 0 0',
       rotation: '0 0 0',
       spawnInCircle: 'radius:2'
     }, oom
