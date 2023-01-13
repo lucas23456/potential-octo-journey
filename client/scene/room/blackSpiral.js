@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'BlackBox',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/BlackBoxGallery.gltf?v=1673646332178'
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/BlackBoxGallery.gltf?v=1673646598009'
     })
              
          .aAssetItem({
@@ -25,7 +25,7 @@ export function markup(
     
     .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '0.5 0.5 0.5'})
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
-    .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:'' })
+    .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5'})
         
   
        

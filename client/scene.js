@@ -76,7 +76,7 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   const scene = oom.aScene({
     id: 'main-scene',
     // Добавил renderer
-    renderer: 'antialias: true; colorManagement: true;',
+    renderer: 'antialias: true; colorManagement: standard;',
     physics: 'gravity: -0.5;',
     networkedScene: `room: ${room}; debug: false; adapter: easyrtc; audio: ${hasMic};`
   }, assets)
