@@ -13,7 +13,7 @@ AFRAME.registerComponent("enmap", {
                 mesh.traverse(function(el) {
                   if (el.material) {
                     el.material.envMap = cubeTex.texture;
-                    el.material.envMap.intensity = 3;
+                    el.material.envMap.intensity = 1;
                     el.material.needsUpdate = true;
                   }
                 });
