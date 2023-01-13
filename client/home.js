@@ -33,7 +33,7 @@ export async function markup(
     rooms = [
       // { id: 'demo', name: 'Folding building' },
       // { id: 'empty', name: 'ToryLab' },
-      { id: 'blackSpiral', name: 'BlackSpiral' },
+      { id: 'blackSpiral', name: 'BlackBoxGallery' },
       // { id: 'spiral', name: 'Spiral' }
     ]
 
