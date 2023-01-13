@@ -23,10 +23,9 @@ export function markup(
   
   scene(oom
     
-    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '2 2 2'})
+    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '0.5 0.5 0.5'})
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
-    .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '2 2 2', enmap:'' })
-    // .aEntity({ gltfModel: '#HallDeconstruct2floor', position: '0 0 0', scale: '2 2 2', enmap:'' })
+    .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:'' })
   .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '2 2 2', enmapinner:''})
   // .aEntity({ gltfModel: '#GlassOuter', position: '0 0 0', scale: '2 2 2', enmap:''})
        .aEntity({ gltfModel: '#GlassWall0', position: '0 0 0', scale: '2 2 2', enmapinner:'',animation:'property: position; to: 0 0.1 0; dir: alternate; loop: true; dur: 2500; easing: linear'})
