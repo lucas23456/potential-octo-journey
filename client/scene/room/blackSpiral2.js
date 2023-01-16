@@ -17,7 +17,7 @@ export function markup(
              
          .aAssetItem({
     id: 'Navigmesh',
-      src: '/scene/spiralNavMesh.gltf'
+      src: '/scene/spiralNavMesh2.gltf'
     }) 
          )
   
