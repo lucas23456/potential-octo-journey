@@ -27,6 +27,8 @@ export function markup(
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
     .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5'})
         
+        .aEntity({ light: 'color: white; intensity: 0.2; type: ambient;', visible: 'true' })
+        
   
        
        )
