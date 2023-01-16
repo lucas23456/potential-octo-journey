@@ -34,6 +34,7 @@ export async function markup(
       // { id: 'demo', name: 'Folding building' },
       // { id: 'empty', name: 'ToryLab' },
       { id: 'blackSpiral', name: 'BlackBoxGallery' },
+      { id: 'blackSpiral2', name: 'BlackBoxGallery2' },
       // { id: 'spiral', name: 'Spiral' }
     ]
 
