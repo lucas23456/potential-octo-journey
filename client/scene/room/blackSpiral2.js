@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'BlackBox',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery2.glb?v=1673860003795'
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery3.glb?v=1673990438133'
     })
              
          .aAssetItem({
