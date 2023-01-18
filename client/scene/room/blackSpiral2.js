@@ -14,6 +14,15 @@ export function markup(
       id: 'BlackBox',
       src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery3.glb?v=1673990906916'
     })
+         
+         .aAssetItem({
+      id: 'LowResImage',
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryLowRes.glb?v=1674025516989'
+    })
+         .aAssetItem({
+      id: 'HiResImage',
+      src: 'https://cdn.glitch.me/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryHiRes.glb?v=1674025521005'
+    })
              
          .aAssetItem({
     id: 'Navigmesh',
@@ -26,6 +35,8 @@ export function markup(
     .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '0.5 0.5 0.5'})
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
     .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5'})
+        .aEntity({ id: 'LRes', navMesh: true, visible: false,  gltfModel: '#LowResImage', rotation: '0 90 0', position: '9.43 3.35 -19.53', scale: '4 4 4'})
+        .aEntity({ id: 'HRes', navMesh: true, visible: false,  gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.43 3.35 -19.53', scale: '4 4 4'})
         
         .aEntity({ light: 'color: white; intensity: 0.2; type: ambient;', visible: 'true' })
         
