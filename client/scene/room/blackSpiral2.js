@@ -12,17 +12,17 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'BlackBox',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery3.glb?v=1673990906916'
+      src: 'https://cdn.glitch.me/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery4.glb?v=1674129721482'
     })
          
-         .aAssetItem({
-      id: 'LowResImage',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryLowRes.glb?v=1674025516989'
-    })
-         .aAssetItem({
-      id: 'HiResImage',
-      src: 'https://cdn.glitch.me/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryHiRes.glb?v=1674025521005'
-    })
+    //      .aAssetItem({
+    //   id: 'LowResImage',
+    //   src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryLowRes.glb?v=1674025516989'
+    // })
+    //      .aAssetItem({
+    //   id: 'HiResImage',
+    //   src: 'https://cdn.glitch.me/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryHiRes.glb?v=1674025521005'
+    // })
              
          .aAssetItem({
     id: 'Navigmesh',
