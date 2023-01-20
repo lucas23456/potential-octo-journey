@@ -15,6 +15,11 @@ export function markup(
       src: 'https://cdn.glitch.me/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery5.glb?v=1674159911516'
     })
          
+         .aAssetItem({
+      id: 'BlackBox',
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryGlass.glb?v=1674222452868'
+    })
+         
     //      .aAssetItem({
     //   id: 'LowResImage',
     //   src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryLowRes.glb?v=1674025516989'
@@ -37,6 +42,7 @@ export function markup(
     .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5'})
         .aEntity({ id: 'LRes',  gltfModel: '#LowResImage', rotation: '0 90 0', position: '9.5 3.35 -19.53', scale: '4 4 4'})
         .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
+        
         
         .aEntity({ light: 'color: white; intensity: 0.2; type: ambient;', visible: 'true' })
         
