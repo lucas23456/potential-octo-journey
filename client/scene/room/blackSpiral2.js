@@ -16,7 +16,7 @@ export function markup(
     })
          
          .aAssetItem({
-      id: 'BlackBox',
+      id: 'Glass',
       src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryGlass.glb?v=1674222452868'
     })
          
@@ -41,6 +41,8 @@ export function markup(
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
     .aEntity({ gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5'})
         .aEntity({ id: 'LRes',  gltfModel: '#LowResImage', rotation: '0 90 0', position: '9.5 3.35 -19.53', scale: '4 4 4'})
+        .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '0.5 0.5 0.5', enmap})
+        
         .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
         
         
