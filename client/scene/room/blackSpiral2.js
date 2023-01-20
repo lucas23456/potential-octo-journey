@@ -46,7 +46,7 @@ export function markup(
         .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
         
         
-        .aEntity({ light: 'color: white; intensity: 0.2; type: ambient;', visible: 'true' })
+        .aEntity({ light: 'color: white; intensity: 0.15; type: ambient;', visible: 'true' })
         
   
        
