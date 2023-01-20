@@ -43,7 +43,7 @@ export function markup(
         .aEntity({ id: 'LRes',  gltfModel: '#LowResImage', rotation: '0 90 0', position: '9.5 3.35 -19.53', scale: '4 4 4'})
         .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:''})
         
-        .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
+        // .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
         
         
         .aEntity({ light: 'color: white; intensity: 0.15; type: ambient;', visible: 'true' })
