@@ -17,7 +17,7 @@ export function markup(
          
          .aAssetItem({
       id: 'Glass',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryGlass.glb?v=1674222452868'
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryGlass.glb?v=1674247262308'
     })
          
     //      .aAssetItem({
