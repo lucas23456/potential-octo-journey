@@ -48,6 +48,7 @@ export function markup(
         
         .aEntity({ light: 'color: white; intensity: 0.15; type: ambient;', visible: 'true' })
         
+        .aSound({ id: 'elemWave',position: '0 8 0', src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/elementary-wave.mp3?v=1674286840408', autoplay:'true', loop:'true', maxDistance:'2', volume:'25'})
   
        
        )

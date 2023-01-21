@@ -16,7 +16,7 @@ export async function markup(
       src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/sky.jpg?v=1671351037168',
       crossorigin: 'anonymous'
     }))
-  scene( {stats:""}, oom
+  scene( {}, oom
    /** .aEntity({
       staticBody: true,
       position: '0 0 0',
