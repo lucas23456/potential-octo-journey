@@ -13,7 +13,7 @@ export async function markup(
     })
     .img({
       id: 'sky',
-      src: '/scene/img/sky.jpg',
+      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/sky.jpg?v=1674479429651',
       crossorigin: 'anonymous'
     }))
   scene( {}, oom
