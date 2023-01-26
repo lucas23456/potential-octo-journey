@@ -12,16 +12,16 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'BlackBox',
-      src: 'https://cdn.glitch.me/b1780a83-15c5-4154-bd07-deed2726dd55/Gallery5.glb?v=1674159911516'
+      src: 'https://cdn.glitch.me/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20Gallery2.glb?v=1674762040122'
     })
          
          .aAssetItem({
       id: 'Glass',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/GalleryGlass.glb?v=1674247262308'
+      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674762146261'
     })
          .aAssetItem({
       id: 'InnerGlassWindow',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/InnerGlassWindow.glb?v=1674565675655'
+      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674762146261'
     })
          .aAssetItem({
       id: 'OuterGlassWindow',
@@ -49,19 +49,19 @@ export function markup(
     
     .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '0.5 0.5 0.5'})
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
-    .aEntity( { gltfModel: '#BlackBox', position: '0 0 0', scale: '0.5 0.5 0.5'})
+    .aEntity( { gltfModel: '#BlackBox', position: '0 0 0', scale: '1 1 1'})
         
         .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:''})
         
-        .aEntity({ gltfModel: '#InnerGlassWindow', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:''})
-        .aEntity({ gltfModel: '#OuterGlassWindow', position: '0 0 0', scale: '0.5 0.5 0.5', enmapinner:''})
+        // .aEntity({ gltfModel: '#InnerGlassWindow', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:''})
+        // .aEntity({ gltfModel: '#OuterGlassWindow', position: '0 0 0', scale: '0.5 0.5 0.5', enmapinner:''})
         
         // .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
         
         
         .aEntity({ light: 'color: white; intensity: 0.15; type: ambient;', visible: 'true' })
         
-        .aSound({ id: 'elemWave',position: '0 8 0', src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/elementary-wave.mp3?v=1674286840408', autoplay:'true', loop:'true', maxDistance:'2', volume:'25'})
+        .aSound({ id: 'elemWave',position: '0 8 0', src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/elementary-wave.mp3?v=1674286840408', autoplay:'true', loop:'true', maxDistance:'2', volume:'20'})
   
        
        )
