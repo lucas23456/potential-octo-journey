@@ -17,7 +17,7 @@ export function markup(
          
          .aAssetItem({
       id: 'Glass',
-      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674762146261'
+      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674763791047'
     })
          .aAssetItem({
       id: 'InnerGlassWindow',
@@ -47,7 +47,7 @@ export function markup(
   
   scene(oom
     
-    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '0.5 0.5 0.5'})
+    .aEntity({ id: 'Navigationmesh', navMesh: true, visible: false,  gltfModel: '#Navigmesh', position: '0 0 0', scale: '1 1 1'})
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
     .aEntity( { gltfModel: '#BlackBox', position: '0 0 0', scale: '1 1 1'})
         
