@@ -19,14 +19,14 @@ export function markup(
       id: 'Glass',
       src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674763791047'
     })
-         .aAssetItem({
-      id: 'InnerGlassWindow',
-      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674762146261'
-    })
-         .aAssetItem({
-      id: 'OuterGlassWindow',
-      src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/OuterGlassWindow.glb?v=1674565674007'
-    })
+    //      .aAssetItem({
+    //   id: 'InnerGlassWindow',
+    //   src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674762146261'
+    // })
+    //      .aAssetItem({
+    //   id: 'OuterGlassWindow',
+    //   src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/OuterGlassWindow.glb?v=1674565674007'
+    // })
          
          
          
