@@ -17,7 +17,7 @@ export function markup(
          
          .aAssetItem({
       id: 'Glass',
-      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674763791047'
+      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/Circle%20GalleryGlass.glb?v=1674765556346'
     })
     //      .aAssetItem({
     //   id: 'InnerGlassWindow',
