@@ -51,7 +51,7 @@ export function markup(
         // .aEntity({ id: 'NavigationmeshSphere', navMesh: true, visible: false,  gltfModel: '#NavigmeshSphere', position: '0 0 0', scale: '2 2 2'})
     .aEntity( { gltfModel: '#BlackBox', position: '0 0 0', scale: '1 1 1'})
         
-        .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:''})
+        .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '1 1 1', enmap:''})
         
         // .aEntity({ gltfModel: '#InnerGlassWindow', position: '0 0 0', scale: '0.5 0.5 0.5', enmap:''})
         // .aEntity({ gltfModel: '#OuterGlassWindow', position: '0 0 0', scale: '0.5 0.5 0.5', enmapinner:''})
@@ -59,7 +59,7 @@ export function markup(
         // .aEntity({ id: 'HRes', gltfModel: '#HiResImage', rotation: '0 90 0', position: '9.4 3.35 -19.53', scale: '4 4 4'})
         
         
-        .aEntity({ light: 'color: white; intensity: 0.15; type: ambient;', visible: 'true' })
+        .aEntity({ light: 'color: white; intensity: 0.7; type: ambient;', visible: 'true' })
         
         .aSound({ id: 'elemWave',position: '0 8 0', src: 'https://cdn.glitch.global/b1780a83-15c5-4154-bd07-deed2726dd55/elementary-wave.mp3?v=1674286840408', autoplay:'true', loop:'true', maxDistance:'2', volume:'20'})
   
