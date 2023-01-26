@@ -21,7 +21,7 @@ export function markup(
     })
     .aAssetItem({
       id: 'cursorImage',
-      src: 'https://cdn.glitch.global/07dee895-de9d-44b6-8eb8-3985d37cefa6/Xcursor.gltf?v=1651676015071'
+      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/XcursorCirc.glb?v=1674769295657'
     })
     .aAssetItem({
       id: 'left-hand-model',
