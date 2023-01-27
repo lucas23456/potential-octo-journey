@@ -39,7 +39,7 @@ export async function markup(
     ]
 
     template = () => {
-      const room = window.localStorage.getItem('room') || 'demo'
+      const room = 'blackSpiral2'
       const username = window.localStorage.getItem('username') || ''
       const roomElm = oom
         .mwcSelect({ class: 'space', required: true, label: 'Комната' })
