@@ -5,9 +5,14 @@ export async function markup(
   const style = document.createElement('style')
 
   style.innerHTML = `
-    login-form .content { display: flex; flex-direction: column }
-    login-form .login { display: flex; justify-content: flex-end }
-    login-form .space { margin: 8px; }
+    body{display: flex; justify-content: center; align-items: center; height: 130vh; overflow-x: hidden; overflow-y: hidden;}
+    login-form .content { display: flex;  flex-direction: row; width: 600px; }
+    login-form {display: flex; justify-content: center; align-items: center;}
+    login-form .login { display: flex; justify-content: center;}
+    login-form .space { margin: 4px }
+    login-form{display: flex; align-items: center; flex-direction: column;}
+    .selector{visibility: hidden;}
+    button{background: #0d73ac; color: white; border: none; border-radius: 5px; cursor: pointer; width: 80px;}
   `
 
   oom(document.head, style)
@@ -16,7 +21,6 @@ export async function markup(
     import('https://cdn.jsdelivr.net/npm/@material/mwc-top-app-bar-fixed@0.25.3/+esm'),
     import('https://cdn.jsdelivr.net/npm/@material/mwc-select@0.25.3/+esm'),
     import('https://cdn.jsdelivr.net/npm/@material/mwc-textfield@0.25.3/+esm'),
-    import('https://cdn.jsdelivr.net/npm/@material/mwc-button@0.25.3/+esm')
   ])
 
 
@@ -40,12 +44,18 @@ export async function markup(
 
     template = () => {
       const room = 'blackSpiral2'
-      const username = window.localStorage.getItem('username') || ''
+     const username = window.localStorage.getItem('username') || ''
       const roomElm = oom
-        .mwcSelect({ class: 'space', required: true, label: 'Комната' })
+        .mwcSelect({ class: 'selector', style:"visibility: hidden", required: true, label: 'Комната' })
       const usernameElm = oom
         .mwcTextfield({ class: 'space', required: true, label: 'Ваше имя (A-Z a-z)', pattern: '[\\w ().]+', value: username })
 
+        let textvr = `VR-галерея — это виртуальная реальность в мире искусства. Новые технологии позволяют исследовать и создавать оригинальные выставочные пространства, погружая зрителей в арт-объект при помощи сразу нескольких органов чувств.
+                    Любой желающий теперь может не только оценить красоту глазами, но даже оказаться внутри картины, услышать звуки, мелодии, шорохи, а иногда – почувствовать прикосновение.
+                    К этому же сегменту искусства относят онлайн-выставки. Виртуальные галереи открывают возможности глобального охвата аудитории, популяризируют искусство, делая подобные бизнес-проекты востребованными и прибыльными. Виртуальные мероприятия доступны 24 часа в сутки, 7 дней в неделю. Они стали отличной альтернативой для любителей искусства, кто не может посетить музей лично. Это особенно актуально в эпоху COVID-19 – закрытых границ и режима изоляции.
+                    Любой человек 21 века легко может ознакомиться с экспонатами частных коллекций, посетив интерактивный музей. После виртуальной экскурсии стало возможным приобрести произведения искусства из любой точки мира.`
+      
+      
       for (const { id, name } of this.rooms) {
         roomElm(oom
           .mwcListItem({ selected: room === id, value: id }, name))
@@ -55,26 +65,40 @@ export async function markup(
       this.room = roomElm.dom
       /** @type {import("@material/mwc-textfield").TextField} */ // @ts-ignore
       this.username = usernameElm.dom
+      
+     
+      let buttontxt = "Вход"
+      
+      
 
       return oom
-        .mwcTopAppBarFixed({ dense: true, centertitle: true }, oom
-          .div({ slot: 'title' }, 'Вход в онлайн галерею'))
+      .div({ style: "margin: 0 auto;" }, oom
+        .div({ slot: 'text', style:"margin-top: -25vh; margin-left: 31%; text-align: justify; font-size: small; z-index: 5; color: white; width: 50%"}, textvr))
         .div({ class: 'content space' }, this.room, this.username, oom
-          .div({ class: 'login space' }, oom.mwcButton({
+          .div({ class: 'login space' }, oom.button({
             onclick: () => this.openRoom(),
-            ...{ outlined: true, icon: 'login', label: 'Вход' }
-          })))
+            ...{ icon: 'login', id:"myButton"}
+          },buttontxt)))
     }
 
     openRoom() {
       const room = this.room.value
       const username = this.username.value
+      
+      //let meta = window.parent.document.getElementById('#metaUniverse'); 
+  
+      //meta.style.display = "none";
+      
+      //alert("")
 
       if (room && username && this.username.checkValidity()) {
         window.localStorage.setItem('room', room)
         window.localStorage.setItem('username', username)
         loadPage('scene')
       }
+      
+      
+      
     }
 
   }
