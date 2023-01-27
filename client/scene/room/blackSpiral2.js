@@ -21,7 +21,7 @@ export function markup(
     })
          .aAssetItem({
       id: 'Numbers',
-      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/GalleryNumbersBakeHalf.glb?v=1674819359398'
+      src: 'https://cdn.glitch.global/acdfc730-297b-4c52-b068-50f3904fbb54/GalleryNumbersBakeQuater.glb?v=1674819609627'
     })
     //      .aAssetItem({
     //   id: 'OuterGlassWindow',
