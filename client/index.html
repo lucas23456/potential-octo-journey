@@ -1,23 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xprogram menu</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+     <!-- <div class="logo">
+      <img src="xprogram.png" class="xprogram" alt="" />
+    </div> -->
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>VR online Gallery - PortalVR</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <!-- Шрифты / иконки -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
-  <!-- Проверка совместимости -->
-  <script src="https://cdn.jsdelivr.net/npm/notml@0.1.0-pre.17/check-compatible.js"></script>
-  <!-- Скрипт управления содержимым -->
-  <script type="module" src="./index.js"></script>
-</head>
+    <div class="hint" id="hint" style="z-index: 1; display: none;">
+      <div class="close" onclick="closeHint()" id="close">
+        <img src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/close.png?v=1673520114578" style="width: 4%; height: auto; position: absolute; cursor: pointer;" alt="" onclick="closeHint()">
+      </div>
+      <p><img src="https://cdn.glitch.global/a8f47e3b-e611-4738-918f-aa32916a9538/ticket.png?v=1673902589084" alt=""></p>
+        <iframe src="https://nova-highfalutin-danthus.glitch.me/" style="border: none; position: absolute; z-index: 3;" width="100%" height="100%" align="left" id="gallery" frameborder="2">
+            Ваш браузер не поддерживает плавающие фреймы!
+       </iframe>
+    </div>
 
-<body style="font-family: 'Roboto', sans-serif; margin: 0;"></body>
+    <nav class="menu">
 
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/2XTmWqUfjeFIyhHSt-hP-Y1Dxm0aUhztBbyeRyDPIeUSWPKvVttWpGPIvUOyFyor-jIglHGOZWyGtQZwXov7A6rK.jpg?v=1675063469889"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №1</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button onclick="openHint()">Посетить</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/13ea1f2d-baa4-4431-8f49-d2205f67106e.png?v=1674656111839"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №2</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button onclick="openHint2()">Посетить</button></p>
+      </div>
+
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/gallery?v=1674656744099"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №3</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button onclick="openHint3()">Посетить</button></p>
+      </div>
+
+
+
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/gallery2.png?v=1674657097136"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №4</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button onclick="openHint4()">Посетить</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/gallery3.png?v=1674657252962"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №5</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button>Посетить</button></p>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/gallery4.png?v=1674657376172"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №6</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button>Посетить</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/gallery5.png?v=1674657562913"
+          style="width: 280px; height: 220px; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №7</h1>
+        <p style="text-align: left; margin-left: 5px">
+
+        </p>
+        <p><button>Посетить</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/shepelev.jpg?v=1673520124204"
+          style="width: 94%; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №8</h1>
+        <p style="text-align: left; margin-left: 5px">
+          Это галерея про Шепелева
+        </p>
+        <p><button>Посетить</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://cdn.glitch.global/0606e9e6-3147-4d3a-84e8-4f98b649ed1a/shepelev.jpg?v=1673520124204"
+          style="width: 94%; border-radius: 5px; margin-top: 10px"
+        />
+        <h1 style="text-align: left; margin-left: 5px">Галерея №9</h1>
+        <p style="text-align: left; margin-left: 5px">
+          Это галерея про Шепелева
+        </p>
+        <p><button>Посетить</button></p>
+      </div>
+
+    </nav>
+
+
+    <script src="script/index.js"></script>
+  </body>
 </html>
