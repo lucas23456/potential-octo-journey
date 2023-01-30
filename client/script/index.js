@@ -3,6 +3,7 @@ function closeHint() {
 
   hint.style.display = "none";
 
+ // @ts-ignore
  document.getElementById("gallery").src = "";
 }
 
@@ -11,6 +12,7 @@ function openHint() {
 
   hint.style.display = "flex";
 
+  // @ts-ignore
   document.getElementById("gallery").src = "controll.html";
 
   let meta = window.parent.document.getElementById('close');
@@ -26,6 +28,7 @@ let hint = document.getElementById("hint");
 
 hint.style.display = "flex";
 
+// @ts-ignore
 document.getElementById("gallery").src = "gallery2.html";
 
 let meta = window.parent.document.getElementById('close');
@@ -42,6 +45,7 @@ let hint = document.getElementById("hint");
 
 hint.style.display = "flex";
 
+// @ts-ignore
 document.getElementById("gallery").src = "gallery3.html";
 
 let meta = window.parent.document.getElementById('close');
@@ -59,6 +63,7 @@ function openHint4() {
 
   hint.style.display = "flex";
 
+  // @ts-ignore
   document.getElementById("gallery").src = "gallery4.html";
 
   let meta = window.parent.document.getElementById('close');
